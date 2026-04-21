@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CRY Digital Music Ltd.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; }
+
+        /* ===== NAVBAR ===== */
+        .navbar { background: linear-gradient(135deg, #0a0a1a 0%, #16213e 100%); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+        .navbar-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo h1 { color: #fff; font-size: 24px; }
+        .logo span { color: #e94560; }
+        .nav-links { display: flex; gap: 25px; list-style: none; }
+        .nav-links a { color: #fff; text-decoration: none; font-size: 15px; transition: 0.3s; }
+        .nav-links a:hover { color: #e94560; }
+
+        /* ===== HEADER ===== */
+        .page-header { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f3460 100%); padding: 150px 0 80px; text-align: center; color: #fff; }
+        .page-header h1 { font-size: 42px; margin-bottom: 10px; }
+        .page-header p { color: #e94560; letter-spacing: 1px; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .content { padding: 80px 0; }
+
+        /* ===== CONTACT GRID ===== */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+
+        .contact-info h2 { color: #1a1a2e; font-size: 32px; margin-bottom: 20px; }
+        .contact-info > p { margin-bottom: 40px; color: #666; }
+
+        .info-card { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 20px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }
+        .info-card:hover { transform: scale(1.02); }
+        .info-card i { font-size: 24px; color: #e94560; background: #fff1f3; padding: 15px; border-radius: 12px; }
+        .info-card h4 { font-size: 18px; color: #1a1a2e; margin-bottom: 5px; }
+        .info-card p, .info-card a { color: #666; text-decoration: none; font-size: 15px; }
+
+        /* ===== FORM BOX ===== */
+        .form-box { background: #fff; padding: 45px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #1a1a2e; font-size: 14px; }
+        input, textarea, select { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 10px; font-size: 15px; background: #fcfcfc; transition: 0.3s; }
+        input:focus, textarea:focus { outline: none; border-color: #e94560; background: #fff; box-shadow: 0 0 10px rgba(233, 69, 96, 0.1); }
+
+        button { width: 100%; padding: 16px; background: #e94560; color: #fff; border: none; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; display: flex; justify-content: center; align-items: center; gap: 10px; }
+        button:hover { background: #1a1a2e; transform: translateY(-3px); }
+
+        .social-row { display: flex; gap: 15px; margin-top: 10px; }
+        .social-row a { width: 40px; height: 40px; background: #1a1a2e; color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
+        .social-row a:hover { background: #e94560; transform: translateY(-3px); }
+
+        footer { background: #0a0a1a; color: #555; padding: 40px 0; text-align: center; border-top: 1px solid #222; }
+
+        @media (max-width: 900px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .page-header h1 { font-size: 32px; }
+            .form-box { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h1><i class="fas fa-paper-plane"></i> CRY<span>Digital</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>Ready to distribute your content globally?</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have a question or a partnership proposal? Our team is ready to help you scale your digital presence.</p>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div>
+                            <h4>Official Email</h4>
+                            <p><a href="mailto:crydigitalmusic@gmail.com">crydigitalmusic@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h4>Executive Management</h4>
+                            <p>MD Maruf Hussain (CEO)</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-share-nodes"></i>
+                        <div>
+                            <h4>Social Presence</h4>
+                            <div class="social-row">
+                                <a href="https://www.facebook.com/share/14Z3PEVQs3W/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://youtube.com/@crydigitalmusicltd" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://instagram.com/cry_digital_music__" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <form action="https://formspree.io/f/myzwkjab" method="POST">
+                        <div class="form-group">
+                            <label>Inquiry Type</label>
+                            <select name="type">
+                                <option value="Partnership">Partnership Inquiry</option>
+                                <option value="Distribution">Content Distribution</option>
+                                <option value="CMS">CMS/MCN Support</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="What can we help with?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit">
+                            Submit Request <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CRY Digital Music Ltd. Verified Content Partner.</p>
+    </footer>
+
+</body>
+</html>

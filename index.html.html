@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRY Digital Music Ltd. | Global Licensing & CMS Distribution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* আপনার আগের সব স্টাইল এখানে থাকবে, আমি শুধু নতুন কিছু ক্লাস এবং কন্টেন্ট আপডেট করছি */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; line-height: 1.6; overflow-x: hidden; }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideInLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }
+
+        /* ===== NAVBAR ===== */
+        .navbar { background: linear-gradient(135deg, #0a0a1a 0%, #16213e 100%); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+        .navbar-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo h1 { color: #fff; font-size: 24px; animation: slideInLeft 0.6s ease; }
+        .logo span { color: #e94560; }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: #e94560; }
+
+        /* ===== HERO SECTION (Updated for Movies/CMS) ===== */
+        .hero { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f3460 100%), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80'); background-blend-mode: overlay; background-size: cover; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; position: relative; }
+        .hero-content { position: relative; z-index: 2; animation: fadeInUp 0.8s ease; max-width: 900px; }
+        .hero-content h1 { color: #fff; font-size: 52px; margin-bottom: 20px; font-weight: 800; text-transform: uppercase; }
+        .hero-content h1 span { color: #e94560; }
+        .hero-content p { color: #ccc; font-size: 20px; margin-bottom: 40px; font-weight: 300; }
+
+        /* STATS */
+        .hero-stats { display: flex; justify-content: center; gap: 50px; margin-bottom: 50px; flex-wrap: wrap; }
+        .stat h2 { color: #e94560; font-size: 40px; font-weight: 700; }
+        .stat p { color: #aaa; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* BUTTONS */
+        .btn { padding: 14px 40px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; cursor: pointer; border: none; font-size: 16px; }
+        .btn-primary { background: linear-gradient(135deg, #e94560 0%, #d63050 100%); color: #fff; box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3); }
+        .btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; margin-left: 10px; }
+        .btn-primary:hover { transform: translateY(-3px); }
+
+        /* ===== SERVICES (Updated with Film/Series) ===== */
+        .services { padding: 100px 0; background: #f4f7f6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 40px; margin-bottom: 60px; color: #1a1a2e; font-weight: 700; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .service-card { background: #fff; padding: 40px 30px; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(233, 69, 96, 0.15); }
+        .service-card i { font-size: 50px; color: #e94560; margin-bottom: 20px; }
+        .service-card h3 { color: #1a1a2e; margin-bottom: 15px; }
+
+        /* FOOTER */
+        footer { background: #0a0a1a; color: #fff; padding: 80px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; }
+        .footer-col h3 { margin-bottom: 20px; color: #e94560; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; color: #aaa; }
+        .footer-bottom { text-align: center; padding-top: 30px; color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h1><i class="fas fa-film"></i> CRY<span>Digital</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#licensing">Licensing</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Global <span>Movie & Music</span> Licensing Hub</h1>
+            <p>Empowering digital networks with premium TV series, full-length movies, and global music assets through advanced CMS management.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h2>500+</h2>
+                    <p>Film & Series</p>
+                </div>
+                <div class="stat">
+                    <h2>10K+</h2>
+                    <p>Music Catalog</p>
+                </div>
+                <div class="stat">
+                    <h2>Global</h2>
+                    <p>Distribution</p>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="partnership.html" class="btn btn-primary"><i class="fas fa-handshake"></i> Network Partnership</a>
+                <a href="contact.html" class="btn btn-secondary"><i class="fas fa-file-contract"></i> Request Licensing</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Core Business Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Film & Series Licensing</h3>
+                    <p>Full paper legal rights for TV series and movies. We provide certified content for global TV networks and OTT platforms.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Enterprise CMS</h3>
+                    <p>Advanced YouTube CMS & MCN solutions. We help networks launch and manage high-authority channels worldwide.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Distribution</h3>
+                    <p>Distribute your content across 100+ digital stores and streaming platforms with optimized revenue collection.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-copyright"></i>
+                    <h3>Rights Protection</h3>
+                    <p>Sophisticated Content ID management to prevent piracy and maximize royalty claims for creators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CRY Digital Music Ltd.</h3>
+                    <p>A leading Content Acquisition & Digital Rights Management company. Authorized provider for Premium Global Media.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal & Rights</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Movie Distribution License</li>
+                        <li><i class="fas fa-check"></i> Music Copyright Holder</li>
+                        <li><i class="fas fa-check"></i> Global CMS Partner</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Official</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> crydigitalmusicl@gmail.com</li>
+                        <li><i class="fas fa-user"></i> CEO: MD MARUF Hussain</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bangladesh (Global Ops)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CRY Digital Music Ltd. All Legal Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
